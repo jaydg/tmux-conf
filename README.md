@@ -1,7 +1,8 @@
 # My tmux configuration
 
-Install with
+## Install
 
+Place the configuration where tmux looks for it:
 ```
 git clone --recurse-submodules http://github.com/jaydg/tmux-conf.git ~/.config/tmux
 ```
@@ -11,6 +12,16 @@ i, as in **I**nstall).
 
 The clipboard manager has some dependencies; either install `wl-clipboard`
 when using Wayland or `xclip` when using X11.
+
+## Integrate
+
+To connect to your tmux session automatically when logging in, add
+
+```bash
+# Restore or connect to tmux session
+. ~/.config/tmux/restore.sh
+```
+to your ~/.bashrc
 
 ## Why?
 
