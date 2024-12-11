@@ -7,7 +7,7 @@ if which tmux &> /dev/null && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux 
   then
     exec tmux new -s ${tmux_default_session_name} && exit;
   else
-    if (($num_attached == 0))
+    if ((num_attached == 0))
       then
         tmux a -t ${tmux_default_session_name};
       else
