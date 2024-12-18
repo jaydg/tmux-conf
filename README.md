@@ -4,7 +4,7 @@
 
 Place the configuration where tmux looks for it:
 ```bash
-git clone --recurse-submodules http://github.com/jaydg/tmux-conf.git ~/.config/tmux
+git clone --recurse-submodules https://github.com/jaydg/tmux-conf.git ~/.config/tmux
 ```
 
 Then start tmux and install the plugins with `prefix` + <kbd>I</kbd> (capital
