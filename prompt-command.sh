@@ -1,6 +1,7 @@
 # Bash hook to update session variables into the current shell's environment
 
 function _tmuxSessionUpdate {
+  test -v TMUX || return 0
   local previous_exit_status=$?;
   trap -- '' SIGINT;
   eval "$(tmux show-environment -s)"
